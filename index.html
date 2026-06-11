@@ -635,21 +635,9 @@
       max-width: 960px;
       margin: 0 auto;
     }
-    .skills-grid-compact {
+    .skills-grid-single-row {
       grid-template-columns: repeat(8, 1fr);
-      gap: 20px 12px;
-    }
-    .skills-grid-compact .skill-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-    }
-    .skills-grid-compact .skill-icon img {
-      width: 44px;
-      height: 44px;
-    }
-    .skills-grid-compact .skill-name {
-      font-size: 0.75rem;
+      gap: 16px 12px;
     }
     
     .skill-item {
@@ -1635,7 +1623,7 @@
       <span class="cat-divider">|</span>
       <span>电商设计</span>
       <span class="cat-divider">|</span>
-      <span>基础板绘</span>
+      <span>手绘作品</span>
     </div>
   </div>
 </section>
@@ -1748,7 +1736,7 @@
     <!-- AI软件 -->
     <div class="skill-category-group fade-up">
       <div class="skill-category-header">AI TOOLS / AI 软件</div>
-      <div class="skills-grid">
+      <div class="skills-grid skills-grid-single-row">
         <div class="skill-item">
           <div class="skill-icon"><img src="https://img.heliar.top/file/1781154765905_openai.png" alt="ChatGPT"></div>
           <div class="skill-name">ChatGPT</div>
@@ -1800,13 +1788,20 @@
     <span class="category-divider">|</span>
     <span class="category-item" data-filter="ecom">电商设计</span>
     <span class="category-divider">|</span>
-    <span class="category-item" data-filter="draw">基础板绘</span>
+    <span class="category-item" data-filter="draw">手绘作品</span>
   </div>
 
   <div class="gallery-workflow fade-up">
-    <div class="gallery-workflow-label">Workflow</div>
+    <div class="gallery-workflow-label">AIGC Workflow</div>
     <div class="gallery-workflow-text">
       通过 <strong>Prompt Engineering</strong> 构建场景描述与画面指令，由 AI 生成整体视觉初稿，再结合 <strong>Photoshop</strong> 进行精修调色、构图调整与细节优化，实现从概念到成品的高效创作闭环。
+    </div>
+  </div>
+  
+  <div class="gallery-workflow fade-up">
+    <div class="gallery-workflow-label">手绘作品</div>
+    <div class="gallery-workflow-text">
+      手绘原创作品，不涉及 AI 辅助创作。
     </div>
   </div>
 
@@ -1829,11 +1824,10 @@
     <div class="masonry-item" data-cat="poster" onclick="openLightbox('aigc-17.png','三明治')"><img src="https://img.heliar.top/file/1781155847156_aigc-17.png" alt="" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">三明治</div><div class="masonry-cat">海报设计</div></div></div>
     <div class="masonry-item" data-cat="poster" onclick="openLightbox('aigc-18.png','三种贝果')"><img src="https://img.heliar.top/file/1781155851810_aigc-18.png" alt="" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">三种贝果</div><div class="masonry-cat">海报设计</div></div></div>
     <div class="masonry-item" data-cat="poster" onclick="openLightbox('aigc-06.png','夏日面包')"><img src="https://img.heliar.top/file/1781155694106_aigc-06.png" alt="" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">夏日限定面包</div><div class="masonry-cat">海报设计</div></div></div>
-    <div class="masonry-item" data-cat="draw" onclick="openLightbox('49f000f9ab10dfe6cbf563f8387d868c.png','角色插画 · 修女')"><img src="https://img.heliar.top/file/1781154742099_49f000f9ab10dfe6cbf563f8387d868c.png" alt="角色插画 · 修女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 修女</div><div class="masonry-cat">基础板绘</div></div></div>
-    <div class="masonry-item" data-cat="draw" onclick="openLightbox('52.png','角色插画 · 黑帽少女')"><img src="https://img.heliar.top/file/1781154749157_52.png" alt="角色插画 · 黑帽少女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 黑帽少女</div><div class="masonry-cat">基础板绘</div></div></div>
-    <div class="masonry-item" data-cat="draw" onclick="openLightbox('cb5b3d334ecfdfca9dc075f82b749059.png','角色插画 · 四叶草')"><img src="https://img.heliar.top/file/1781154726320_cb5b3d334ecfdfca9dc075f82b749059.png" alt="角色插画 · 四叶草" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 四叶草</div><div class="masonry-cat">基础板绘</div></div></div>
-    <div class="masonry-item" data-cat="draw" onclick="openLightbox('yameng.png','角色插画 · 校服少女')"><img src="https://img.heliar.top/file/1781154722351_yameng.png" alt="角色插画 · 校服少女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 校服少女</div><div class="masonry-cat">基础板绘</div></div></div>
-    <div class="masonry-item" data-cat="draw" onclick="openLightbox('小偶像.png','角色插画 · 小偶像')"><img src="https://img.heliar.top/file/1781154722351_yameng.png" alt="角色插画 · 小偶像" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 小偶像</div><div class="masonry-cat">基础板绘</div></div></div>
+    <div class="masonry-item" data-cat="draw" onclick="openLightbox('49f000f9ab10dfe6cbf563f8387d868c.png','角色插画 · 修女')"><img src="https://img.heliar.top/file/1781154742099_49f000f9ab10dfe6cbf563f8387d868c.png" alt="角色插画 · 修女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 修女</div><div class="masonry-cat">手绘作品 · 非AIGC</div></div></div>
+    <div class="masonry-item" data-cat="draw" onclick="openLightbox('52.png','角色插画 · 黑帽少女')"><img src="https://img.heliar.top/file/1781154749157_52.png" alt="角色插画 · 黑帽少女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 黑帽少女</div><div class="masonry-cat">手绘作品 · 非AIGC</div></div></div>
+    <div class="masonry-item" data-cat="draw" onclick="openLightbox('cb5b3d334ecfdfca9dc075f82b749059.png','角色插画 · 四叶草')"><img src="https://img.heliar.top/file/1781154726320_cb5b3d334ecfdfca9dc075f82b749059.png" alt="角色插画 · 四叶草" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 四叶草</div><div class="masonry-cat">手绘作品 · 非AIGC</div></div></div>
+    <div class="masonry-item" data-cat="draw" onclick="openLightbox('yameng.png','角色插画 · 校服少女')"><img src="https://img.heliar.top/file/1781154722351_yameng.png" alt="角色插画 · 校服少女" loading="lazy"><div class="masonry-overlay"><div class="masonry-title">角色插画 · 校服少女</div><div class="masonry-cat">手绘作品 · 非AIGC</div></div></div>
   </div>
 </section>
 
@@ -1921,6 +1915,18 @@
 
 
 
+    <!-- 两个主样机并列 -->
+    <div class="web-grid">
+      <div class="web-card" onclick="openLightbox('web-01.png','CreamyPetal')">
+        <img src="https://img.heliar.top/file/1781159349050_web-01.PNG" alt="CreamyPetal 甜点品牌官网" loading="lazy">
+        <div class="web-card-label">CreamyPetal 甜点品牌官网</div>
+      </div>
+      <div class="web-card" onclick="openLightbox('web-02.png','电商管理后台')">
+        <img src="https://img.heliar.top/file/1781159350268_web-02.PNG" alt="电商管理后台仪表盘" loading="lazy">
+        <div class="web-card-label">电商管理后台仪表盘</div>
+      </div>
+    </div>
+
     <!-- 甜品官网页面截图 -->
     <div class="web-strip-group">
       <div class="web-strip-title">CREAMYPETAL / 页面详情</div>
@@ -1930,6 +1936,17 @@
         <div class="web-strip-thumb" onclick="openLightbox('web-ss-07.png','灵感社区')"><img src="https://img.heliar.top/file/1781154871445_web-ss-07.png" alt="灵感社区" loading="lazy"></div>
         <div class="web-strip-thumb" onclick="openLightbox('web-ss-08.png','个人中心')"><img src="https://img.heliar.top/file/1781154878506_web-ss-08.png" alt="个人中心" loading="lazy"></div>
         <div class="web-strip-thumb" onclick="openLightbox('web-ss-09.png','商品详情')"><img src="https://img.heliar.top/file/1781154892351_web-ss-09.png" alt="商品详情" loading="lazy"></div>
+      </div>
+    </div>
+
+    <!-- 电商后台页面截图 -->
+    <div class="web-strip-group">
+      <div class="web-strip-title">ADMIN DASHBOARD / 页面详情</div>
+      <div class="web-strip-thumbs">
+        <div class="web-strip-thumb" onclick="openLightbox('web-ss-01.png','销售概览')"><img src="https://img.heliar.top/file/1781154884602_web-ss-01.png" alt="销售概览" loading="lazy"></div>
+        <div class="web-strip-thumb" onclick="openLightbox('web-ss-02.png','库存管理')"><img src="https://img.heliar.top/file/1781154890014_web-ss-02.png" alt="库存管理" loading="lazy"></div>
+        <div class="web-strip-thumb" onclick="openLightbox('web-ss-03.png','订单管理')"><img src="https://img.heliar.top/file/1781154851309_web-ss-03.png" alt="订单管理" loading="lazy"></div>
+        <div class="web-strip-thumb" onclick="openLightbox('web-ss-04.png','订单详情')"><img src="https://img.heliar.top/file/1781154851780_web-ss-04.png" alt="订单详情" loading="lazy"></div>
       </div>
     </div>
 
@@ -2333,15 +2350,60 @@ filterBtns.forEach(btn => {
 });
 
 /* === LIGHTBOX === */
+const imageMap = {
+  'aigc-01.png': 'https://img.heliar.top/file/1781155871072_aigc-01.png',
+  'aigc-02.png': 'https://img.heliar.top/file/1781155675269_aigc-02.png',
+  'aigc-03.png': 'https://img.heliar.top/file/1781155675722_aigc-03.png',
+  'aigc-04.png': 'https://img.heliar.top/file/1781155687418_aigc-04.png',
+  'aigc-05.png': 'https://img.heliar.top/file/1781155709097_aigc-05.png',
+  'aigc-06.png': 'https://img.heliar.top/file/1781155694106_aigc-06.png',
+  'aigc-07.png': 'https://img.heliar.top/file/1781155750810_aigc-07.png',
+  'aigc-08.png': 'https://img.heliar.top/file/1781155768080_aigc-08.png',
+  'aigc-10.png': 'https://img.heliar.top/file/1781155777555_aigc-10.png',
+  'aigc-11.png': 'https://img.heliar.top/file/1781155796915_aigc-11.png',
+  'aigc-13.png': 'https://img.heliar.top/file/1781155781108_aigc-13.png',
+  'aigc-14.png': 'https://img.heliar.top/file/1781155820596_aigc-14.png',
+  'aigc-15.png': 'https://img.heliar.top/file/1781155841226_aigc-15.png',
+  'aigc-16.png': 'https://img.heliar.top/file/1781155843386_aigc-16.png',
+  'aigc-17.png': 'https://img.heliar.top/file/1781155847156_aigc-17.png',
+  'aigc-18.png': 'https://img.heliar.top/file/1781155851810_aigc-18.png',
+  'aigc-19.png': 'https://img.heliar.top/file/1781155863356_aigc-19.png',
+  '49f000f9ab10dfe6cbf563f8387d868c.png': 'https://img.heliar.top/file/1781154742099_49f000f9ab10dfe6cbf563f8387d868c.png',
+  '52.png': 'https://img.heliar.top/file/1781154749157_52.png',
+  'cb5b3d334ecfdfca9dc075f82b749059.png': 'https://img.heliar.top/file/1781154726320_cb5b3d334ecfdfca9dc075f82b749059.png',
+  'yameng.png': 'https://img.heliar.top/file/1781154722351_yameng.png',
+  'ui-01.png': 'https://img.heliar.top/file/1781154809915_ui-01.png',
+  'ui-02.png': 'https://img.heliar.top/file/1781154815810_ui-02.png',
+  'ui-03.png': 'https://img.heliar.top/file/1781154840932_ui-03.png',
+  'ui-04.png': 'https://img.heliar.top/file/1781154840510_ui-04.png',
+  'ui-05.png': 'https://img.heliar.top/file/1781154847905_ui-05.png',
+  'ui-06.png': 'https://img.heliar.top/file/1781154790477_ui-06.png',
+  'ui-07.png': 'https://img.heliar.top/file/1781154800822_ui-07.png',
+  'ui-08.png': 'https://img.heliar.top/file/1781154802080_ui-08.png',
+  'ui-09.png': 'https://img.heliar.top/file/1781154806867_ui-09.png',
+  'ui-10.png': 'https://img.heliar.top/file/1781154806916_ui-10.png',
+  'web-ss-05.png': 'https://img.heliar.top/file/1781154875131_web-ss-05.png',
+  'web-ss-06.png': 'https://img.heliar.top/file/1781154873633_web-ss-06.png',
+  'web-ss-07.png': 'https://img.heliar.top/file/1781154871445_web-ss-07.png',
+  'web-ss-08.png': 'https://img.heliar.top/file/1781154878506_web-ss-08.png',
+  'web-ss-01.png': 'https://img.heliar.top/file/1781154884602_web-ss-01.png',
+  'web-ss-02.png': 'https://img.heliar.top/file/1781154890014_web-ss-02.png',
+  'web-ss-03.png': 'https://img.heliar.top/file/1781154851309_web-ss-03.png',
+  'web-ss-04.png': 'https://img.heliar.top/file/1781154851780_web-ss-04.png',
+  'web-ss-09.png': 'https://img.heliar.top/file/1781154892351_web-ss-09.png',
+  'web-01.png': 'https://img.heliar.top/file/1781159349050_web-01.PNG',
+  'web-02.png': 'https://img.heliar.top/file/1781159350268_web-02.PNG'
+};
+
 function openLightbox(src, caption) {
   triggerNoise(80);
-  // 清除所有选中状态
   if (window.getSelection) {
     window.getSelection().removeAllRanges();
   } else if (document.selection) {
     document.selection.empty();
   }
-  document.getElementById('lightbox-img').src = src;
+  const fullUrl = imageMap[src] || src;
+  document.getElementById('lightbox-img').src = fullUrl;
   document.getElementById('lightbox-caption').textContent = caption || '';
   document.getElementById('lightbox').classList.add('active');
   document.body.style.overflow = 'hidden';
